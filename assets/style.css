@@ -1,0 +1,430 @@
+:root {
+    --background: white;
+    --accent: #007aff;
+    --text: black;
+    --textBg: white;
+    --secondary: #aeaeb2;
+    --disabled: #d1d1d6;
+    --shade: #0000000f;
+    --red: #ff3b30;
+    --green: #34c759;
+    --yellow: #ffcc00;
+    --shadow: rgb(0 0 0 / 25%) 0px 3px 15px;
+}
+
+/* #region Basic */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--shade);
+    border-radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: pgfont;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+h1 {
+    margin: 15px 0 10px;
+    text-align: center;
+}
+
+h1:first-child {
+    margin: 5px 10px 25px;
+}
+
+h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    color: var(--textBg);
+    background-color: var(--accent);
+    border: 0;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    transition: background-color 0.4s, opacity 0.4s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.secondary {
+    background-color: var(--secondary);
+}
+
+button:disabled {
+    background-color: var(--disabled);
+    cursor: unset;
+}
+
+button:hover:disabled {
+    opacity: 1;
+}
+
+hr {
+    height: 404px;
+    margin: 23px 13px;
+    border: 2px solid var(--shade);
+    border-radius: 4px;
+}
+
+pre {
+    margin: 10px 0px 15px;
+    padding: 8px;
+    font-family: "Cascadia Code", "Cascadia Mono", "Courier New", Consolas, Courier, monospace;
+    font-size: 13px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+
+pre:last-child {
+    margin-bottom: 0;
+}
+
+/* #endregion */
+
+/* #region Custom Components */
+
+.icon {
+    min-width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--shade);
+    border-radius: 100%;
+}
+
+.icon > img {
+    width: auto;
+    height: auto;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.radioBox {
+    max-width: 80%;
+    margin: 15px 15px;
+    display: flex;
+}
+
+.radio {
+    min-width: 18px;
+    max-width: 18px;
+    min-height: 18px;
+    max-height: 18px;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--disabled);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.radio[checked] {
+    background-color: var(--accent);
+}
+
+.radio::before {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    background-color: var(--textBg);
+    border-radius: 100%;
+    transition: width 0.2s, height 0.2s;
+}
+
+.radio[checked]::before {
+    width: 8px;
+    height: 8px;
+}
+
+.radio[disabled] {
+    cursor: unset;
+}
+
+.radio > input[type="radio"] {
+    display: none;
+}
+
+#card {
+    width: 350px;
+    height: 450px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    transition: width 0.8s;
+}
+
+#card > div {
+    height: 100%;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+#card > div:first-child {
+    display: flex;
+    opacity: 1;
+}
+
+#card > div.horizontalPage {
+    padding: unset;
+    flex-direction: row;
+}
+
+#card > div > div {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons > * {
+    margin-right: 10px;
+}
+
+.buttons > :last-child {
+    margin-right: 0;
+}
+
+.left {
+    width: 100%;
+    height: 100%;
+    padding: 3px 0 3px 3px;
+}
+
+.right {
+    min-width: 300px;
+    height: 100%;
+    padding: 13px 13px 13px 10px;
+    flex-direction: column;
+}
+
+.right > .content {
+    justify-content: center;
+    align-items: center;
+}
+
+.choice {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.choice.correct > .radio {
+    background-color: var(--green);
+}
+
+.choice.wrong > .radio {
+    background-color: var(--red);
+}
+
+.choice > h3 {
+    margin: 0;
+}
+
+#eulaPage p {
+    text-align: center;
+}
+
+#questionContent {
+    padding: 0 10px 10px;
+    overflow: overlay;
+}
+
+#finishContent {
+    padding: 0 10px 10px;
+}
+
+#finishContent > p {
+    margin-bottom: 30px;
+}
+
+#finishContent > p:last-child {
+    margin-bottom: 0;
+}
+
+#scoreValue {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#scoreValue.great {
+    color: var(--green);
+}
+
+#scoreValue.okay {
+    color: var(--yellow);
+}
+
+#scoreValue.bad {
+    color: var(--red);
+}
+
+/* #endregion */
+
+/* #region Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: black;
+        --text: white;
+        --textBg: black;
+        --secondary: #48484a;
+        --disabled: #2c2c2e;
+        --shade: #ffffff0f;
+        --shadow: rgb(255 255 255 / 15%) 0px 3px 15px;
+    }
+}
+
+/* #endregion */
+
+/* #region Mobile */
+
+@media only screen and (max-device-width: 750px) {
+    hr {
+        width: 100%;
+        height: unset;
+        margin: 15px 0;
+    }
+
+    #card {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: unset;
+    }
+
+    #card > div.horizontalPage {
+        flex-direction: column;
+    }
+
+    #card > div > div {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #card > div > div.buttons {
+        flex-direction: unset;
+    }
+
+    #questionPage {
+        overflow: overlay;
+    }
+
+    .left {
+        padding: 0px;
+    }
+
+    .content {
+        height: unset;
+    }
+
+    #questionContent {
+        padding: 0 10px;
+        overflow: unset;
+    }
+
+    .right {
+        width: 100%;
+        height: 300px;
+        min-width: unset;
+        padding: 0 13px 13px 13px;
+    }
+
+    #questionVerifyNext {
+        margin-top: 15px;
+    }
+
+    #score {
+        height: 100%;
+    }
+}
+
+/* #endregion */
+
+/* #region Font Face */
+
+@font-face {
+    font-family: pgfont;
+    src: url("./fonts/Medium.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: pgfont;
+    src: url("./fonts/MediumItalic.otf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: pgfont;
+    src: url("./fonts/Bold.otf");
+    font-weight: 700;
+}
+
+/* #endregion */

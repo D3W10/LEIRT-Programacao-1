@@ -1,0 +1,1524 @@
+{
+    "questions": [
+        {
+            "question": [
+                "O que guarda uma variável do seguinte tipo:",
+                {
+                    "code": "int",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Guarda um número inteiro positivo ou negativo",
+                "Guarda um número positivo ou negativo",
+                "Guarda um número inteiro positivo",
+                "Guarda um número positivo"
+            ]
+        },
+        {
+            "question": [
+                "O que guarda uma variável do seguinte tipo:",
+                {
+                    "code": "double",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Guarda um número racional positivo ou negativo",
+                "Guarda um número inteiro positivo ou negativo",
+                "Guarda um número racional positivo",
+                "Guarda um número inteito positivo"
+            ]
+        },
+        {
+            "question": [
+                "O que guarda uma variável do seguinte tipo:",
+                {
+                    "code": "char",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Guarda o valor da tabela ASCII do caractere passado",
+                "Guarda um conjunto de caracteres",
+                "Guarda um caractere que pertença à tabela ASCII",
+                "Guarda um número inteito positivo"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 0;\n\n    printf(\"%d\", x++);\n    printf(\"%d\", ++x);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "02",
+                "0\n2",
+                "Erro de compilação",
+                "1\n2"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 0;\n\n    prinf(\"%d\", x++);\n    prinf(\"%d\", ++x);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "0\n2",
+                "02",
+                "1\n2"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 1;\n\n    x = x++ + x + 1 * ++x;\n    printf(\"%d\", x);\n    \n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "6",
+                "5",
+                "7",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 2;\n\n    x = ++x + 1 * x++;\n    printf(\"%d\", x);\n    \n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "7",
+                "6",
+                "8",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 1;\n\n    x = ++x + x++ * x;\n    printf(\"%d\", x);\n    \n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "9",
+                "8",
+                "7",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 5, y = 2;\n\n    printf(\"%d\", x / y);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "2",
+                "2.5",
+                "3",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 1, y = 6;\n\n    printf(\"%d\", x / y);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "0",
+                "0.166666667",
+                "0.2",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 9, y = 5;\n\n    printf(\"%d\", x / y);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "1",
+                "1.8",
+                "2",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 20, y = 3;\n\n    printf(\"%d\", x / y);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "6",
+                "6.666666667",
+                "7",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 10, y = 9;\n\n    printf(\"%d\", x / y);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "1",
+                "1.111111111",
+                "1.2",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    printf(\"%d\", func());\n    return 0;\n}\n\nint func() {\n    int x = 3;\n    int y = x;\n    y += x + 4 * 2;\n    printf(\"%d\", y);\n    return x;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro, a função func() não existe",
+                "14\n14",
+                "14\n3",
+                "143"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint func();\n\nint main() {\n    printf(\"%d\", func());\n    return 0;\n}\n\nint func() {\n    int x = 3;\n    int y = x;\n    y += x + 4 * 2;\n    printf(\"%d\", y);\n    return x;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "14\n3",
+                "Erro, a função func() não existe",
+                "14\n14",
+                "143"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint func() {\n    int x = 3;\n    int y = x;\n    y += x + 4 * 2;\n    printf(\"%d\", y);\n    return x;\n}\n\nint main() {\n    printf(\"%d\", func());\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "14\n3",
+                "143",
+                "Erro, a função func() não existe",
+                "14\n14"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint par(int num) {\n    return num % 2;\n}\n\nint main() {\n    printf(\"%d\", par(5));\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "1",
+                "Erro, a função par() não existe",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nvoid hipotenusaQuadrada(double a, double b) {\n    double c = a * a + b * b;\n\n    return c;\n}\n\nint main() {\n    printf(\"%.2lf\", hipotenusaQuadrada(2, 3));\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "13",
+                "13.00",
+                "13.000000"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\ndouble hipotenusaQuadrada(double a, double b) {\n    double c = a * a + b * b;\n\n    return c;\n}\n\nint main() {\n    printf(\"%d\", hipotenusaQuadrada(2, 3));\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "13",
+                "13.00",
+                "13.000000"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\ndouble hipotenusaQuadrada(double a, double b) {\n    double c = a * a + b * b;\n\n    return c;\n}\n\nint main() {\n    printf(\"%.2lf\", hipotenusaQuadrada(5));\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "5.00",
+                "6.00",
+                "13.00"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\ndouble hipotenusaQuadrada(double a, double b) {\n    double c = a * a + b * b;\n\n    return c;\n}\n\nint main() {\n    printf(\"%.2lf\", hipotenusaQuadrada(2, 3));\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "13.00",
+                "Erro de compilação",
+                "13",
+                "13.000000"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o nome dado à seguinte linha de código:",
+                {
+                    "code": "int toUpper(char word[], int idx);",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Assinatura de uma função",
+                "Definição de uma função",
+                "Declaração de uma função",
+                "Criação de uma função"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o nome dado à seguinte linha de código:",
+                {
+                    "code": "int par(int num);",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Assinatura de uma função",
+                "Definição de uma função",
+                "Declaração de uma função",
+                "Criação de uma função"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o nome dado à seguinte linha de código:",
+                {
+                    "code": "int strTrim(char sentence[]);",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Assinatura de uma função",
+                "Definição de uma função",
+                "Declaração de uma função",
+                "Criação de uma função"
+            ]
+        },
+        {
+            "question": [
+                "O que devolve a seguinte condição considerando que o valor de x seja 3 e o de y seja 5:",
+                {
+                    "code": "x < y && (y + x) % 2 == 0 || -y != 4",
+                    "language": "text"
+                }
+            ],
+            "answers": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "question": [
+                "O que devolve a seguinte condição considerando que o valor de x seja -2 e o de y seja 10:",
+                {
+                    "code": "pow(x, 3) == -y + 2 || y < x && (x + -y) + (-x + y) != y - y",
+                    "language": "text"
+                }
+            ],
+            "answers": [
+                "false",
+                "true"
+            ]
+        },
+        {
+            "question": [
+                "A que biblioteca pertence a função printf()?"
+            ],
+            "answers": [
+                "stdio.h",
+                "stdlib.h",
+                "string.h",
+                "locale.h"
+            ]
+        },
+        {
+            "question": [
+                "A que biblioteca pertence a função scanf()?"
+            ],
+            "answers": [
+                "stdio.h",
+                "stdlib.h",
+                "string.h",
+                "locale.h"
+            ]
+        },
+        {
+            "question": [
+                "A que biblioteca pertence a função strcpy()?"
+            ],
+            "answers": [
+                "string.h",
+                "stdio.h",
+                "stdlib.h",
+                "locale.h"
+            ]
+        },
+        {
+            "question": [
+                "A que biblioteca pertence a função sqrt()?"
+            ],
+            "answers": [
+                "math.h",
+                "stdio.h",
+                "stdlib.h",
+                "locale.h"
+            ]
+        },
+        {
+            "question": [
+                "A que biblioteca pertence a função pow()?"
+            ],
+            "answers": [
+                "math.h",
+                "stdio.h",
+                "stdlib.h",
+                "locale.h"
+            ]
+        },
+        {
+            "question": [
+                "Que biblioteca é necessária para utilizar o tipo bool?"
+            ],
+            "answers": [
+                "stdbool.h",
+                "bool.h",
+                "stdio.h",
+                "stdlib.h"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o objetivo da função strcpy()?"
+            ],
+            "answers": [
+                "Copiar uma string de uma variável para outra",
+                "Devolve o tamanho de uma string",
+                "Transforma uma variável de int para char[ ]",
+                "Compara duas strings e verifica se são iguais"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o código de formato para variáveis do tipo int?"
+            ],
+            "answers": [
+                "%d",
+                "%lf",
+                "%c",
+                "%i"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o código de formato para variáveis do tipo double?"
+            ],
+            "answers": [
+                "%lf",
+                "%d",
+                "%c",
+                "%f"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o código de formato para variáveis do tipo float?"
+            ],
+            "answers": [
+                "%f",
+                "%d",
+                "%c",
+                "%s"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o código de formato para variáveis do tipo char?"
+            ],
+            "answers": [
+                "%c",
+                "%lf",
+                "%d",
+                "%s"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o código de formato para variáveis do tipo char [ ]?"
+            ],
+            "answers": [
+                "%s",
+                "%lf",
+                "%d",
+                "%c"
+            ]
+        },
+        {
+            "question": [
+                "Qual é a alteração ao código de formato %lf que deve ser feita para que mostre o valor com 2 casas décimais?"
+            ],
+            "answers": [
+                "%.2lf",
+                "%2lf",
+                "%lf.2",
+                "%lf2"
+            ]
+        },
+        {
+            "question": [
+                "Qual é a alteração ao código de formato %d que deve ser feita para que mostre o valor com 3 algarismos?"
+            ],
+            "answers": [
+                "%03d",
+                "%3d",
+                "%d3",
+                "%d03"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 5, y = 13;\n\n    if (x < y)\n        printf(\"%d\", x);\n    else\n        printf(\"%d\", y);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "5",
+                "13",
+                "Erro de compilação",
+                "Nada é mostrado"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 5, y = 13\n\n    if (x < y)\n        printf(\"%d\", x);\n    else\n        printf(\"%d\", y);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "5",
+                "13",
+                "Nada é mostrado"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 5;\n    int y = x;\n\n    if (x < y)\n        printf(\"%d\", x);\n    else if (y < x)\n        printf(\"%d\", y + 1);\n    else\n        printf(\"%d\", x + y);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "10",
+                "6",
+                "Erro de compilação",
+                "5"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 5, y = 13;\n\n    printf(\"%d\", x < y ? \"Sim\", \"Não\");\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "Sim",
+                "Não",
+                "Erro de sintaxe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 5, y = 13;\n\n    printf(\"%s\", x < y ? \"Sim\", \"Não\");\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Sim",
+                "Não",
+                "Erro de sintaxe",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int i = 0;\n\n    while (i < 5) {\n        printf(\"%d \", i + 1);\n        i++;\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "1 2 3 4 5 ",
+                "Stack Overflow (Loop Infinito)",
+                "0 1 2 3 4 ",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int i = 0;\n\n    while (i < 5) {\n        printf(\"%d \", i + 1);\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Stack Overflow (Loop Infinito)",
+                "1 2 3 4 5 ",
+                "0 1 2 3 4 ",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int i = 0;\n\n    while (i < 5)\n        i++;\n        printf(\"%d \", i);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "5 ",
+                "0 1 2 3 4 5 ",
+                "0 1 2 3 4 ",
+                "Stack Overflow (Loop Infinito)"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int i = 0;\n\n    while (i < 3) {\n        printf(\"%d \", i);\n        i--;\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Stack Overflow (Loop Infinito)",
+                "1 2 3 ",
+                "0 1 2 3 ",
+                "Nada"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int i = 0;\n\n    while (i < 3)\n        printf(\"%d \", i);\n        i++;\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Stack Overflow (Loop Infinito)",
+                "1 2 3 ",
+                "0 1 2 3 ",
+                "Nada"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int i = 3;\n\n    while (i < 3) {\n        printf(\"%d\\t\", i);\n        i--;\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Nada",
+                "0 1 2 3 ",
+                "1 2 3 ",
+                "Stack Overflow (Loop Infinito)"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 0;\n\n    do {\n        printf(\"%d \", x);\n        x++;\n    }\n    while (x < 5);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "0 1 2 3 4 ",
+                "Stack Overflow (Loop Infinito)",
+                "0 1 2 3 4 5 ",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 0;\n\n    do {\n        printf(\"%d \", x);\n    }\n    while (x < 5);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Stack Overflow (Loop Infinito)",
+                "0 1 2 3 4 ",
+                "0 1 2 3 4 5 ",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 1;\n\n    do {\n        x = x + 5 / 2 * 3;\n        printf(\"%d\", x);\n    }\n    while (x != 13);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "713",
+                "7\n13",
+                "Erro de compilação",
+                "Stack Overflow (Loop Infinito)"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 0;\n\n    do {\n        x = x + 5 / 2 * 3;\n        printf(\"%d\", x);\n    }\n    while (x != 13);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Stack Overflow (Loop Infinito)",
+                "713",
+                "7\n13",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    for (int a = 0; a < 5; a++) {\n        printf(\"%d \", a);\n    }\n    printf(\"A\");\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "0 1 2 3 4 A",
+                "01234A",
+                "012345A",
+                "0 1 2 3 4 5 A"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    for (int a = 0; a < 5; a++) {\n        printf(\"%d \", x);\n    }\n    printf(\"A\");\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "0 1 2 3 4 A",
+                "0 1 2 3 4 5 A",
+                "012345A"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    for (int a = 0; a < 5; a++)\n        printf(\"%d\", a);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "01234",
+                "Erro de sintaxe",
+                "012345",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int a;\n\n    for (a = 0; a < 5; ++a)\n        printf(\"%d|\", a);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "0|1|2|3|4|",
+                "0|1|2|3|4",
+                "|0|1|2|3|4|",
+                "Erro de sintaxe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int a = 3;\n\n    for (a = 0; a < 5; ++a)\n        printf(\"|%d|\", a);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "|0||1||2||3||4|",
+                "|3||4|",
+                "|3|4|5|",
+                "|0|1|2|3|4|"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int a = 2;\n\n    for ( ; a < 5; ++a)\n        printf(\"%d\t\", a);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "2&emsp;&emsp;3&emsp;&emsp;4",
+                "Erro de sintaxe",
+                "3&emsp;&emsp;4",
+                "3&emsp;&emsp;4&emsp;&emsp;5"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int a = 1;\n\n    for ( ; a < 5; )\n        printf(\"%d/\", a);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Stack Overflow (Loop Infinito)",
+                "1/2/3/4",
+                "1/2/3/4/5",
+                "Erro de sintaxe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int a = 1;\n\n    for ( ; a < 5; ) {\n        printf(\"%d/\", a);\n        ++a;\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "1/2/3/4",
+                "1/2/3/4/5",
+                "Stack Overflow (Loop Infinito)",
+                "Erro de sintaxe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int a = 1;\n\n    for ( ; ; )\n        printf(\"%d \", a++);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Stack Overflow (Loop Infinito)",
+                "Erro de sintaxe",
+                "Erro de compilação",
+                "1 2 3 4 5"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int num = 2, res;\n\n    switch (num) {\n        case 1:\n            res = 4;\n            break;\n        case 2:\n            res = 5;\n            break;\n        case 3:\n            res = 6;\n            break;\n        default:\n            res = 7;\n            break;\n    }\n    printf(\"%d\", res);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "5",
+                "4",
+                "6",
+                "7"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int num = 1, res;\n\n    switch (num) {\n        case 1:\n            res = 4;\n        case 2:\n            res = 5;\n        case 3:\n            res = 6;\n        default:\n            res = 7;\n    }\n    printf(\"%d\", res);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "7",
+                "4",
+                "5",
+                "6"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int num = 4;\n\n    switch (num) {\n        case 1:\n            printf(\"Um\");\n            break;\n        case 3:\n            printf(\"Três\");\n            break;\n        default:\n            printf(\"Inválido\");\n            break;\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Inválido",
+                "Erro de compilação",
+                "Erro de sintaxe",
+                "Três"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int num = 4;\n\n    switch (num) {\n        case 4 % 2:\n            printf(\"0 \");\n        case 3 / 1:\n            printf(\"1 \");\n        case 5 - 3:\n            printf(\"2 \");\n        case 4 * 2 - 3:\n            printf(\"3 \");\n        case 7 + 1 / 2:\n            printf(\"4 \");\n        default:\n            printf(\"OO\");\n            break;\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "OO",
+                "4 ",
+                "4 OO",
+                "0 1 2 "
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int num = 1;\n\n    switch (num) {\n        case 0:\n            printf(\"A \");\n        case 1:\n            printf(\"B \");\n        case 2:\n            printf(\"C \");\n        case 3:\n            printf(\"D \");\n        case 4:\n            printf(\"E \");\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "B C D E ",
+                "B ",
+                "A B C D E ",
+                "Erro de sintaxe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int num = 2;\n\n    switch (num) {\n        case 0:\n            printf(\"A \");\n            break;\n        case 1:\n            printf(\"B \");\n        case 2:\n            printf(\"C \");\n        case 3:\n            printf(\"D \");\n            break;\n        case 4:\n            printf(\"E \");\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "C D ",
+                "B C D E ",
+                "C D E ",
+                "Erro de sintaxe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int num = 2;\n\n    switch (num) {\n        case 1:\n        case 2:\n        case 3:\n            printf(\"Baixo\n\");\n        case 4:\n        case 5:\n        case 6:\n            printf(\"Alto\n\");\n        default:\n            printf(\"Fora da Escala\n\");\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Baixo\nAlto\nFora da Escala",
+                "Baixo\nFora da Escala",
+                "Baixo",
+                "Nada será mostrado"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n#define SIZE 11\n\nint main() {\n    char word[SIZE] = \"Uma palavra\";\n\n    for (int i = 0; i < SIZE; i++) {\n        switch (word[i]) {\n            case 'a':\n            case 'e':\n            case 'i':\n            case 'o':\n            case 'u':\n                printf(\"0\");\n                break;\n            case ' ':\n            case '\n':\n            case '\t':\n                printf(\"1\");\n                break;\n            default:\n                printf(\"2\");\n        }\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "22012020220",
+                "02012020220",
+                "20210202002",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nvoid hipotenusaQuadrada(double a, double b, double* c) {\n    *c = a * a + b * b;\n}\n\nint main() {\n    double c;\n\n    hipotenusaQuadrada(2, 3, &c);\n    printf(\"%.2lf\", c);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "13.00",
+                "Erro de sintaxe",
+                "13",
+                "13.000000"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nvoid hipotenusaQuadrada(double a, double b, double* c) {\n    *c = a * a + b * b;\n}\n\nint main() {\n    double c;\n\n    printf(\"%.2lf\", hipotenusaQuadrada(2, 3, &c));\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "13",
+                "13.00",
+                "13.000000"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nvoid hipotenusaQuadrada(double a, double b, double* c) {\n    *c = a * a + b * b;\n}\n\nint main() {\n    double c;\n\n    hipotenusaQuadrada(2, 3, c);\n    printf(\"%.2lf\", c);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "13",
+                "13.00",
+                "13.000000"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nvoid hipotenusaQuadrada(double a, double b, double* c) {\n    c = a * a + b * b;\n}\n\nint main() {\n    double c;\n\n    hipotenusaQuadrada(2, 3, &c);\n    printf(\"%.2lf\", c);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "13",
+                "13.00",
+                "13.000000"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nvoid hipotenusaQuadrada(double a, double b, double c) {\n    *c = a * a + b * b;\n}\n\nint main() {\n    double c;\n\n    hipotenusaQuadrada(2, 3, *c);\n    printf(\"%.2lf\", c);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "13",
+                "13.00",
+                "13.000000"
+            ]
+        },
+        {
+            "question": [
+                "Que valor terá o array depois de ser executado o seguinte código?",
+                {
+                    "code": "int main() {\n    int nums[5];\n\n    for (int i = 0; i < 5; i++)\n        nums[i] = i + 2;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "[ 2, 3, 4, 5, 6 ]",
+                "[ 3, 4, 5, 6, 7 ]",
+                "[ 3, 4, 5, 6, 7, 8 ]",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Qual é a forma correta para declarar um array de char's?",
+                "1ª Opção",
+                {
+                    "code": "char text[];",
+                    "language": "cpp"
+                },
+                "2ª Opção",
+                {
+                    "code": "char text[MAX_SIZE];",
+                    "language": "cpp"
+                },
+                "3ª Opção",
+                {
+                    "code": "char[MAX_SIZE] text;",
+                    "language": "cpp"
+                },
+                "4ª Opção",
+                {
+                    "code": "char[] text;",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "2ª Opção",
+                "1ª Opção",
+                "3ª Opção",
+                "4ª Opção"
+            ]
+        },
+        {
+            "question": [
+                "Qual é a forma correta de definir o valor inicial de um array de char's?",
+                "1ª Opção",
+                {
+                    "code": "char text[5] = ['a', 'e', 'i', 'o', 'u'];",
+                    "language": "cpp"
+                },
+                "2ª Opção",
+                {
+                    "code": "char text[5] = [\"a\", \"e\", \"i\", \"o\", \"u\"];",
+                    "language": "cpp"
+                },
+                "3ª Opção",
+                {
+                    "code": "char text[5] = {\"a\", \"e\", \"i\", \"o\", \"u\"};",
+                    "language": "cpp"
+                },
+                "4ª Opção",
+                {
+                    "code": "char text[5] = {'a', 'e', 'i', 'o', 'u'};",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "4ª Opção",
+                "1ª Opção",
+                "2ª Opção",
+                "3ª Opção"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\nint main() {\n    int nums[] = {1, 2, 3, 4, 5};\n\n    for (int i = 0; i < 5; i++)\n        printf(\"%d\", nums[i % 3]);\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "12312",
+                "01201",
+                "12345",
+                "O array não tem tamanho definido"
+            ]
+        },
+        {
+            "question": [
+                "Que valor terá o array depois de ser executado o seguinte código?",
+                {
+                    "code": "int main() {\n    int nums[5];\n\n    for (int i = 1; i <= 5; i++)\n        nums[i] = i;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de execução",
+                "01234",
+                "12345",
+                "1234"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nint main() {\n    Person person1;\n\n    strcpy(person1.name, \"John\");\n    person1.age = 30;\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "Name: John\nAge: 30",
+                "Name: \nAge: 30",
+                "Name: John\nAge: "
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nint main() {\n    Person person1;\n\n    strcpy(person1.name, \"John\");\n    person1.age = 30;\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Name: John\nAge: 30",
+                "Erro de compilação",
+                "Name: \nAge: 30",
+                "Name: John\nAge: 0"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nvoid fillStruct(Person *person1, char name[], int age);\n\nint main() {\n    Person person1;\n\n    fillStruct(person1, \"James\", 15);\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}\n\nvoid fillStruct(Person *person1, char name[], int age) {\n    strcpy(person1.name, name);\n    person1.age = age;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "Name: James\nAge: 15",
+                "Name: \nAge: 0",
+                "Person não existe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nvoid fillStruct(Person *person1, char name[], int age);\n\nint main() {\n    Person person1;\n\n    fillStruct(&person1, \"James\", 15);\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}\n\nvoid fillStruct(Person *person1, char name[], int age) {\n    strcpy(person1->name, name);\n    person1->age = age;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Name: James\nAge: 15",
+                "Erro de compilação",
+                "Name: \nAge: 0",
+                "Person não existe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nvoid fillStruct(Person person1, char name[], int age);\n\nint main() {\n    Person person1;\n\n    fillStruct(person1, \"Thomas\", 20);\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}\n\nvoid fillStruct(Person person1, char name[], int age) {\n    strcpy(person1.name, name);\n    person1.age = age;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Name: \nAge: 0",
+                "Name: Thomas\nAge: 20",
+                "Erro de compilação",
+                "Person não existe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n#include <string.h>\n\nstruct {\n    char make[50];\n    char model[50];\n    int year;\n    double price;\n} Car;\n\nint main() {\n    Car car1;\n\n    strcpy(car1.make, \"Ford\");\n    strcpy(car1.model, \"Mustang\");\n    car1.year = 1969;\n    car1.price = 15000;\n\n    printf(\"Make: %s\n\", car1.make);\n    printf(\"Price: $%.2lf\n\", car1.price);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Car não existe",
+                "Make: Ford\nPrice: $15000.00",
+                "Make: \nPrice: $0",
+                "Erro de sintaxe"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char make[50];\n    char model[50];\n    int year;\n    double price;\n} Car;\n\nint main() {\n    Car car1;\n\n    strcpy(car1.make, \"Ford\");\n    strcpy(car1.model, \"Mustang\");\n    car1.year = 1969;\n    car1.price = 15000;\n\n    printf(\"Make: %s\n\", car1.model);\n    printf(\"Price: $%.2lf\n\", car1.price);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Make: Mustang\nPrice: $15000.00",
+                "Make: Ford\nPrice: $15000.00",
+                "Car não existe",
+                "Make: \nPrice: $0"
+            ]
+        },
+        {
+            "question": [
+                "Qual é o código correto para mostrar quatro '%' na consola?",
+                "1ª Opção",
+                {
+                    "code": "printf(\"\\%\\%\\%\\%\");",
+                    "language": "cpp"
+                },
+                "2ª Opção",
+                {
+                    "code": "printf(\"%%%%\");",
+                    "language": "cpp"
+                },
+                "3ª Opção",
+                {
+                    "code": "printf(\"%%%%%%%%\");",
+                    "language": "cpp"
+                },
+                "4ª Opção",
+                {
+                    "code": "printf(\"%04\");",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "3ª Opção",
+                "1ª Opção",
+                "2ª Opção",
+                "4ª Opção"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\n#define TEXT \"Hello World\"\n\nint main() {\n    printf(TEXT);\n    printf(\"\n5 %% 2 = %d\", 5 % 2);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Hello World\n5 % 2 = 1",
+                "Hello World\n5 %% 2 = 1",
+                "Hello World\n5 %% 2 = 0",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\n#define DIVISOR 5\n#define DIVIDENDO 12\n\nint main() {\n    printf(\"%d\", DIVIDENDO / DIVISOR);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "2",
+                "2.4",
+                "0",
+                "Erro de compilação"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\n#define NUMC 5\n#define NUMT 3\n#define VAL 0\n\nint main() {\n    VAL = NUMC + NUMT;\n    printf(\"%d\", VAL);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de compilação",
+                "0",
+                "8",
+                "5"
+            ]
+        },
+        {
+            "question": [
+                "Que valor terá o array depois de ser executado o seguinte código?",
+                {
+                    "code": "#define SIZE 5\n\nint main() {\n    int nums[SIZE];\n\n    for (int i = 0; i <= 5; i++)\n        nums[i] = i % 2;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de execução",
+                "[0, 1, 0, 1, 0]",
+                "[0, 1, 0, 1, 0, 1]",
+                "[1, 0, 1, 0, 1, 0]"
+            ]
+        },
+        {
+            "question": [
+                "Que valor terá o array depois de ser executado o seguinte código?",
+                {
+                    "code": "#define SIZE \"5\"\n\nint main() {\n    int nums[SIZE];\n\n    for (int i = 0; i <= 5; i++)\n        nums[i] = i % 2;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de sintaxe",
+                "[0, 1, 0, 1, 0]",
+                "[0, 1, 0, 1, 0, 1]",
+                "[1, 0, 1, 0, 1, 0]"
+            ]
+        },
+        {
+            "question": [
+                "Qual é a forma correta de declarar um array de double's com 2 dimensões?",
+                "1ª Opção",
+                {
+                    "code": "double[MAX][MAX] notas;",
+                    "language": "cpp"
+                },
+                "2ª Opção",
+                {
+                    "code": "double[MAX, MAX] notas;",
+                    "language": "cpp"
+                },
+                "3ª Opção",
+                {
+                    "code": "double notas[MAX, MAX];",
+                    "language": "cpp"
+                },
+                "4ª Opção",
+                {
+                    "code": "double notas[MAX][MAX];",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "4ª Opção",
+                "1ª Opção",
+                "2ª Opção",
+                "3ª Opção"
+            ]
+        },
+        {
+            "question": [
+                "Que resultado é mostrado na consola ao ser executado este código?",
+                {
+                    "code": "#include <stdio.h>\n\n#define MAX 3\n\nint main() {\n    double notas[MAX][MAX];\n\n    for (int i = 0; i < MAX; i++)\n    {\n        for (int j = 0; j < MAX; j++)\n            notas[i][j] = i + j;\n    }\n    \n    printf(\"%.3lf\", notas[1][1]);\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "2.000",
+                "1.000",
+                "0.000",
+                "3.000"
+            ]
+        },
+        {
+            "question": [
+                "Que valor terá o array bidimensional depois de ser executado o seguinte código?",
+                {
+                    "code": "#include <stdio.h>\n\n#define MAX1 2\n#define MAX2 3\n\nint main() {\n    double notas[MAX1][MAX2];\n\n    for (int i = 0; i < MAX1; i++)\n    {\n        for (int j = 0; j < MAX2; j++)\n            notas[j][i] = 0;\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Erro de execução",
+                "0 0 0 \n0 0 0 ",
+                "0 0 \n0 0 \n0 0 ",
+                "0 0 \n0 0 "
+            ]
+        },
+        {
+            "question": [
+                "Qual é a forma correta de obter o valor da coluna 8 linha 5 do array bidimensional?",
+                "1ª Opção",
+                {
+                    "code": "notas[4][7]",
+                    "language": "cpp"
+                },
+                "2ª Opção",
+                {
+                    "code": "notas[8][5]",
+                    "language": "cpp"
+                },
+                "3ª Opção",
+                {
+                    "code": "notas[5][8]",
+                    "language": "cpp"
+                },
+                "4ª Opção",
+                {
+                    "code": "notas[7][4]",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "1ª Opção",
+                "2ª Opção",
+                "3ª Opção",
+                "4ª Opção"
+            ]
+        },
+        {
+            "question": [
+                "O que faz o seguinte código?",
+                {
+                    "code": "#include <stdio.h>\n#include <stdlib.h>\n\n#define MAX1 2\n#define MAX2 3\n\nint main() {\n    int matriz[MAX1][MAX2];\n\n    for (int i = 0; i < MAX1; i++)\n    {\n        for (int j = 0; j < MAX2; j++)\n            matriz[i][j] = rand();\n    }\n\n    return 0;\n}",
+                    "language": "cpp"
+                }
+            ],
+            "answers": [
+                "Cria um array 2x3 e preenche com valores aleatórios",
+                "Cria um array 3x2 e preenche com valores aleatórios",
+                "Cria um array 2x3 e preenche com valores do sistema",
+                "Cria um array 3x2 e preenche com valores do sistema"
+            ]
+        }
+    ]
+}

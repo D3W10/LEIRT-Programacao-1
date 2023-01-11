@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="LEIRT Programação 1">
+        <meta name="author" content="D3W10">
+        <link rel="stylesheet" href="./assets/style.css">
+        <link id="codeTheme" rel="stylesheet">
+        <link rel="icon" href="./assets/c.svg">
+        <title>LEIRT | Programação 1</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    </head>
+    <body>
+        <div id="card">
+            <div id="mainPage">
+                <div class="content">
+                    <div class="icon">
+                        <img src="./assets/c.svg">
+                    </div>
+                    <h1>Programação 1</h1>
+                    <h2>LEIRT - 1º Semestre</h2>
+                </div>
+                <button id="mainPageButton" disabled>Iniciar</button>
+            </div>
+            <div id="eulaPage">
+                <div class="content">
+                    <h1>Informação</h1>
+                    <p>As perguntas que aparecerão no exame de Programação 1 serão perguntas de escrita de código C em papel. Com esta ferramenta será apenas testado o conhecimento sobre sintaxe, tipos, funções, bibliotecas, etc. da linguagem C e não como resolver problemas!</p>
+                    <p>Se já souber o funcionamento do código C e quiser apenas treinar o raciocínio lógico, é recomendado que resolva os exames fornecidos pelo professor.</p>
+                </div>
+                <button id="eulaPageButton">Continuar</button>
+            </div>
+            <div id="setupPage">
+                <div class="content">
+                    <h1>Escolha o modo</h1>
+                    <div class="radioBox">
+                        <div class="radio">
+                            <input id="quizType" type="radio" name="quizType" value="0">
+                        </div>
+                        <div>
+                            <h3>Aleatório</h3>
+                            <p>Serão feitas 10 perguntas escolhidas aleatóriamente.</p>
+                        </div>
+                    </div>
+                    <div class="radioBox">
+                        <div class="radio">
+                            <input type="radio" name="quizType" value="1">
+                        </div>
+                        <div>
+                            <h3>Completo</h3>
+                            <p>Serão feitas todas as perguntas (<span id="questionQtd">0</span> perguntas disponíveis).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="setupBackButton" class="secondary">Voltar</button>
+                    <button id="setupStartButton" disabled>Iniciar</button>
+                </div>
+            </div>
+            <div id="questionPage" class="horizontalPage">
+                <div class="left">
+                    <div class="content">
+                        <h1 id="questionTitle">Pergunta</h1>
+                        <div id="questionContent"></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="right">
+                    <div id="answerDiv" class="content"></div>
+                    <button id="questionVerifyNext" disabled>Verificar</button>
+                </div>
+            </div>
+            <div id="finishPage" class="horizontalPage">
+                <div class="left">
+                    <div class="content">
+                        <h1>Resultados</h1>
+                        <div id="finishContent">
+                            <h3>Tempo:</h3>
+                            <p id="finishTime">00:00</p>
+                            <h3>Respostas Corretas:</h3>
+                            <p><span id="finishCorrect">0</span> respostas</p>
+                            <h3>Respostas Erradas:</h3>
+                            <p><span id="finishWrong">0</span> respostas</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="right">
+                    <div id="score" class="content">
+                        <p id="scoreValue">0.0</p>
+                    </div>
+                    <button id="finishButton">Terminar</button>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/home.js"></script>
+    </body>
+</html>
