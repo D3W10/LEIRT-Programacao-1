@@ -589,7 +589,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 5, y = 13;\n\n    printf(\"%d\", x < y ? \"Sim\", \"Não\");\n\n    return 0;\n}",
+                    "code": "#include <stdio.h>\n\nint main() {\n    int x = 5, y = 13;\n\n    printf(\"%d\", x < y ? \"Sim\" : \"Não\");\n\n    return 0;\n}",
                     "language": "cpp"
                 }
             ],
@@ -1191,7 +1191,7 @@
             "question": [
                 "Que valor terá o array depois de ser executado o seguinte código?",
                 {
-                    "code": "int main() {\n    int nums[5];\n\n    for (int i = 1; i <= 5; i++)\n        nums[i] = i;\n}",
+                    "code": "int main() {\n    int nums[5];\n\n    for (int i = 1; i <= 5; i++)\n        nums[i] = i;\n\n\n    return 0;\n}",
                     "language": "cpp"
                 }
             ],
