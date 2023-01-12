@@ -214,7 +214,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n\nint func();\n\nint main() {\n    printf(\"%d\", func());\n    return 0;\n}\n\nint func() {\n    int x = 3;\n    int y = x;\n    y += x + 4 * 2;\n    printf(\"%d\", y);\n    return x;\n}",
+                    "code": "#include <stdio.h>\n\nint func();\n\nint main() {\n    printf(\"%d\", func());\n    return 0;\n}\n\nint func() {\n    int x = 3;\n    int y = x;\n    y += x + 4 * 2;\n    printf(\"%d\\n\", y);\n    return x;\n}",
                     "language": "cpp"
                 }
             ],
@@ -234,8 +234,8 @@
                 }
             ],
             "answers": [
-                "14\n3",
                 "143",
+                "14\n3",
                 "Erro, a função func() não existe",
                 "14\n14"
             ]
@@ -844,7 +844,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n\nint main() {\n    int a = 2;\n\n    for ( ; a < 5; ++a)\n        printf(\"%d\t\", a);\n\n    return 0;\n}",
+                    "code": "#include <stdio.h>\n\nint main() {\n    int a = 2;\n\n    for ( ; a < 5; ++a)\n        printf(\"%d\\t\", a);\n\n    return 0;\n}",
                     "language": "cpp"
                 }
             ],
@@ -994,7 +994,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n\nint main() {\n    int num = 2;\n\n    switch (num) {\n        case 1:\n        case 2:\n        case 3:\n            printf(\"Baixo\n\");\n        case 4:\n        case 5:\n        case 6:\n            printf(\"Alto\n\");\n        default:\n            printf(\"Fora da Escala\n\");\n    }\n\n    return 0;\n}",
+                    "code": "#include <stdio.h>\n\nint main() {\n    int num = 2;\n\n    switch (num) {\n        case 1:\n        case 2:\n        case 3:\n            printf(\"Baixo\\n\");\n        case 4:\n        case 5:\n        case 6:\n            printf(\"Alto\\n\");\n        default:\n            printf(\"Fora da Escala\\n\");\n    }\n\n    return 0;\n}",
                     "language": "cpp"
                 }
             ],
@@ -1104,9 +1104,9 @@
                 }
             ],
             "answers": [
-                "[ 2, 3, 4, 5, 6 ]",
-                "[ 3, 4, 5, 6, 7 ]",
-                "[ 3, 4, 5, 6, 7, 8 ]",
+                "[2, 3, 4, 5, 6]",
+                "[3, 4, 5, 6, 7]",
+                "[3, 4, 5, 6, 7, 8]",
                 "Erro de compilação"
             ]
         },
@@ -1206,7 +1206,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nint main() {\n    Person person1;\n\n    strcpy(person1.name, \"John\");\n    person1.age = 30;\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}",
+                    "code": "#include <stdio.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nint main() {\n    Person person1;\n\n    strcpy(person1.name, \"John\");\n    person1.age = 30;\n\n    printf(\"Name: %s\\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}",
                     "language": "cpp"
                 }
             ],
@@ -1221,7 +1221,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nint main() {\n    Person person1;\n\n    strcpy(person1.name, \"John\");\n    person1.age = 30;\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}",
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nint main() {\n    Person person1;\n\n    strcpy(person1.name, \"John\");\n    person1.age = 30;\n\n    printf(\"Name: %s\\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}",
                     "language": "cpp"
                 }
             ],
@@ -1236,7 +1236,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nvoid fillStruct(Person *person1, char name[], int age);\n\nint main() {\n    Person person1;\n\n    fillStruct(person1, \"James\", 15);\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}\n\nvoid fillStruct(Person *person1, char name[], int age) {\n    strcpy(person1.name, name);\n    person1.age = age;\n}",
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nvoid fillStruct(Person *person1, char name[], int age);\n\nint main() {\n    Person person1;\n\n    fillStruct(person1, \"James\", 15);\n\n    printf(\"Name: %s\\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}\n\nvoid fillStruct(Person *person1, char name[], int age) {\n    strcpy(person1.name, name);\n    person1.age = age;\n}",
                     "language": "cpp"
                 }
             ],
@@ -1251,7 +1251,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nvoid fillStruct(Person *person1, char name[], int age);\n\nint main() {\n    Person person1;\n\n    fillStruct(&person1, \"James\", 15);\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}\n\nvoid fillStruct(Person *person1, char name[], int age) {\n    strcpy(person1->name, name);\n    person1->age = age;\n}",
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nvoid fillStruct(Person *person1, char name[], int age);\n\nint main() {\n    Person person1;\n\n    fillStruct(&person1, \"James\", 15);\n\n    printf(\"Name: %s\\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}\n\nvoid fillStruct(Person *person1, char name[], int age) {\n    strcpy(person1->name, name);\n    person1->age = age;\n}",
                     "language": "cpp"
                 }
             ],
@@ -1266,7 +1266,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nvoid fillStruct(Person person1, char name[], int age);\n\nint main() {\n    Person person1;\n\n    fillStruct(person1, \"Thomas\", 20);\n\n    printf(\"Name: %s\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}\n\nvoid fillStruct(Person person1, char name[], int age) {\n    strcpy(person1.name, name);\n    person1.age = age;\n}",
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char name[50];\n    int age;\n} Person;\n\nvoid fillStruct(Person person1, char name[], int age);\n\nint main() {\n    Person person1;\n\n    fillStruct(person1, \"Thomas\", 20);\n\n    printf(\"Name: %s\\n\", person1.name);\n    printf(\"Age: %d\", person1.age);\n\n    return 0;\n}\n\nvoid fillStruct(Person person1, char name[], int age) {\n    strcpy(person1.name, name);\n    person1.age = age;\n}",
                     "language": "cpp"
                 }
             ],
@@ -1281,7 +1281,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n#include <string.h>\n\nstruct {\n    char make[50];\n    char model[50];\n    int year;\n    double price;\n} Car;\n\nint main() {\n    Car car1;\n\n    strcpy(car1.make, \"Ford\");\n    strcpy(car1.model, \"Mustang\");\n    car1.year = 1969;\n    car1.price = 15000;\n\n    printf(\"Make: %s\n\", car1.make);\n    printf(\"Price: $%.2lf\n\", car1.price);\n\n    return 0;\n}",
+                    "code": "#include <stdio.h>\n#include <string.h>\n\nstruct {\n    char make[50];\n    char model[50];\n    int year;\n    double price;\n} Car;\n\nint main() {\n    Car car1;\n\n    strcpy(car1.make, \"Ford\");\n    strcpy(car1.model, \"Mustang\");\n    car1.year = 1969;\n    car1.price = 15000;\n\n    printf(\"Make: %s\\n\", car1.make);\n    printf(\"Price: $%.2lf\", car1.price);\n\n    return 0;\n}",
                     "language": "cpp"
                 }
             ],
@@ -1296,7 +1296,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char make[50];\n    char model[50];\n    int year;\n    double price;\n} Car;\n\nint main() {\n    Car car1;\n\n    strcpy(car1.make, \"Ford\");\n    strcpy(car1.model, \"Mustang\");\n    car1.year = 1969;\n    car1.price = 15000;\n\n    printf(\"Make: %s\n\", car1.model);\n    printf(\"Price: $%.2lf\n\", car1.price);\n\n    return 0;\n}",
+                    "code": "#include <stdio.h>\n#include <string.h>\n\ntypedef struct {\n    char make[50];\n    char model[50];\n    int year;\n    double price;\n} Car;\n\nint main() {\n    Car car1;\n\n    strcpy(car1.make, \"Ford\");\n    strcpy(car1.model, \"Mustang\");\n    car1.year = 1969;\n    car1.price = 15000;\n\n    printf(\"Make: %s\\n\", car1.model);\n    printf(\"Price: $%.2lf\", car1.price);\n\n    return 0;\n}",
                     "language": "cpp"
                 }
             ],
@@ -1342,7 +1342,7 @@
             "question": [
                 "Que resultado é mostrado na consola ao ser executado este código?",
                 {
-                    "code": "#include <stdio.h>\n\n#define TEXT \"Hello World\"\n\nint main() {\n    printf(TEXT);\n    printf(\"\n5 %% 2 = %d\", 5 % 2);\n\n    return 0;\n}",
+                    "code": "#include <stdio.h>\n\n#define TEXT \"Hello World\"\n\nint main() {\n    printf(TEXT);\n    printf(\"\\n5 %% 2 = %d\", 5 % 2);\n\n    return 0;\n}",
                     "language": "cpp"
                 }
             ],

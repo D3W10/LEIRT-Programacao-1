@@ -182,7 +182,7 @@ document.getElementById("questionVerifyNext").addEventListener("click", async ()
     if (document.getElementById("questionVerifyNext").innerText == "Verificar" && document.querySelector("#questionAnswer:checked") != null) {
         totalTime += Date.now() - startTime;
 
-        if (dataCpy[currentQuestionIndex].answers.find((elm) => elm == document.querySelector("#questionAnswer:checked").parentElement.parentElement.querySelector("h3").innerText) == dataCpy[currentQuestionIndex].answers[0]) {
+        if (dataCpy[currentQuestionIndex].answers.find((elm) => elm.trimEnd() == document.querySelector("#questionAnswer:checked").parentElement.parentElement.querySelector("h3").innerText) == dataCpy[currentQuestionIndex].answers[0]) {
             document.querySelector("#questionAnswer:checked").parentElement.parentElement.classList.add("correct");
             correctQ++;
         }
